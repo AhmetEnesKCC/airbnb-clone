@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
 import MediumCard from "../components/MediumCard";
 import SmallCard from "../components/SmallCard";
+import Router from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Home({ exploreData, cardsData }) {
   return (

@@ -6,4 +6,34 @@
   .button {
     @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition duration-100 ease-out;
   }
+
+  .skeleton-image {
+    @apply w-full h-full;
+    @apply relative;
+    @apply z-30;
+    @apply rounded-md;
+    background: linear-gradient(141deg, #fd5b61 0%, #f5888d 100%);
+    @apply animate-pulse;
+  }
+
+  .skeleton-text {
+    @apply w-max;
+    @apply relative;
+    @apply z-30;
+    background: linear-gradient(141deg, #fd5b61 0%, #f5888d 100%);
+    @apply animate-pulse;
+    color: transparent;
+  }
+}
+
+@keyframes skeleton-img {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
